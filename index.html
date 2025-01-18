@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Analyzer</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <h1>Welcome to Ingredient Analyzer</h1>
+    <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+        <!-- Label for the file input -->
+        <label for="image-upload">Upload an ingredient image:</label>
+        
+        <!-- File input with title and placeholder for accessibility -->
+        <input 
+            type="file" 
+            id="image-upload" 
+            name="image" 
+            accept="image/*" 
+            required 
+            title="Choose an image file to upload for analysis" 
+            placeholder="Select an image file"
+        >
+        
+        <button type="submit">Analyze</button>
+    </form>
+
+    <div id="results"></div> <!-- Results will be displayed here -->
+
+    <script src="app.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
