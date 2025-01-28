@@ -3,3 +3,4 @@ mysql-connector-python
 pytesseract
 fuzzywuzzy
 Pillow
+gunicorn
